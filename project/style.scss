@@ -1,0 +1,161 @@
+.product {
+    max-width: 1440px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    &_header {
+        background-color: #000cff;
+        p {
+            color: white;
+            padding: 59px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+    &_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 44px 183px;
+        h3 {
+            font-size: 59px;
+            font-weight: 600;
+            margin: 0;
+        }
+        .fa {
+            font-size: 29px;
+            border: 2px solid #000cff;
+            padding: 20px;
+            position: relative;
+ 
+        }
+    }
+    &_content {
+        margin: 0 183px;
+        &__show {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 127px;
+
+            p {
+                font-size: 77px;
+                font-weight: bold;
+                margin: 0 0 21px 0;
+            }
+            span {
+                font-size: 31px;
+            }
+        }
+        &__show-left {
+            font-size: 29px;
+            font-weight: bold;
+
+            padding: 10px;
+        }
+        &__box {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 37px;
+            margin-top: 80px;
+            align-items: center;
+            &_item {
+                display: grid;
+                grid-template-rows: repeat(3, auto);
+                img {
+                    width: 335px;
+                    height: 335px;
+                }
+                p {
+                    font-size: 31px;
+                    font-weight: bold;
+                    margin: 26px 0 17px 0;
+                }
+                strike {
+                    color: black;
+                }
+                span {
+                    margin-top: 10px;
+                    color: #000cff;
+                    font-weight: bold;
+                    font-size: 31px;
+                }
+
+                button {
+                    padding: 10px;
+                    width: 60%;
+                    margin-top: 50px;
+                    color: #000cff;
+                    background-color: transparent;
+                    border: 2px solid #000cff;
+                    font-weight: bold;
+                    font-size: 29px;
+                }
+            }
+        }
+        &__page {
+            margin-top: 80px;
+            color: black;
+            button {
+                padding: 10px 15px;
+                font-weight: bold;
+                font-size: 19px;
+                background-color: transparent;
+                border: none;
+            }
+            .active {
+                background-color: #000cff;
+                color: white;
+            }
+        }
+    }
+    &_question {
+        background-color: #f4f4f4;
+        padding: 77px 130px;
+        margin-top: 70px;
+        text-align: center;
+        line-height: 1.5;
+        &__title {
+            font-size: 59px;
+            color: #000cff;
+            font-weight: bold;
+        }
+        &__description {
+            font-size: 23px;
+            color: black;
+        }
+        button {
+            padding: 10px;
+            font-size: 29px;
+            font-weight: bold;
+            border: 2px solid #000cff;
+        }
+        &__button {
+            margin-top: 20px;
+            &--left {
+                background-color: transparent;
+                color: #000cff;
+            }
+            &--right {
+                background-color: #000cff;
+                color: white;
+            }
+        }
+    }
+    &_footer {
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        ul {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(5, auto);
+            gap: 40px;
+            margin-top: 70px;
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+}
